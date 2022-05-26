@@ -45,8 +45,8 @@ for(alpha0 in alpha0s){
         for(userj in 1:N){
           correctOrWrongCpp1[userj,]<-recsCpp1[userj,]%in%truthCpp[userj,]
         }
-        save(n_sample,durationCpp1, file=paste("./results/Pseudo/durations/N",N,'n',n,'alpha',alpha0,'lambda',lambda, 'run',run,'nmc',n_sample,'.RData',sep=""))
-        save(results1, recsCpp1, correctOrWrongCpp1,file=paste("./results/Pseudo/Recs/N",N,'n',n,'alpha',alpha0,'lambda',lambda, 'run',run,'nmc',n_sample, '.RData',sep=""))
+        save(n_sample,durationCpp1, file=paste("./results/durations/N",N,'n',n,'alpha',alpha0,'lambda',lambda, 'run',run,'nmc',n_sample,'.RData',sep=""))
+        save(results1, recsCpp1, correctOrWrongCpp1,file=paste("./results/Recs/N",N,'n',n,'alpha',alpha0,'lambda',lambda, 'run',run,'nmc',n_sample, '.RData',sep=""))
       }  
     }
   }
